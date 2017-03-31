@@ -5,7 +5,7 @@ require_once('./utils.php');
 function generateBatch($size, $slug, $name) {
     $batch = array();
     for ($i = 0; $i < $size; ++$i) {
-        $batch[] = array("name" => $name, "date" => date("c"), "f1" => rand(0, 10), "f2" => rand(0, 10), "f3" => rand(0, 10), "slug" => $slug);
+        $batch[] = array("name" => $name, "date" => date("Y:m:d H:i:s"), "f1" => rand(0, 10), "f2" => rand(0, 10), "f3" => rand(0, 10), "slug" => $slug);
     }
     return $batch;
 }
