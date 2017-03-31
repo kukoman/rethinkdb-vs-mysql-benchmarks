@@ -12,8 +12,8 @@ define('RETHINK_USER', 'root');
 define('RETHINK_PASSWORD', '');
 define('RETHINK_DB', 'tests');
 
-define('DB_ROWS', 2000000);
-define('DB_STEP', 150);
+define('DB_ROWS', 1000000);
+define('DB_STEP', 200);
 
 
 if (strnatcmp(phpversion(), '5.4.30') < 0) {
